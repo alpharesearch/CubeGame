@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/CubeWidget.vala" ctype="Workbench">
+    <Files>
+      <File FileName="src/CubeWidget.vala" Line="29" Column="24" />
+      <File FileName="src/GameMain.vala" Line="73" Column="25" />
+      <File FileName="src/GameArea.vala" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="wafTest" expanded="True">
+            <Node name="Packages" expanded="True">
+              <Option id="ShowAllFiles" value="True" />
+            </Node>
+            <Node name="src" expanded="True">
+              <Node name="CubeWidget.vala" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Option id="ShowProjects" value="True" />
+          <Option id="NestedNamespaces" value="False" />
+          <Option id="PublicApiOnly" value="False" />
+          <Option id="GroupByType" value="True" />
+          <Option id="GroupByAccess" value="False" />
+          <Node name="wafTest" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+</Properties>

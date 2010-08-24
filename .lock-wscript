@@ -1,0 +1,9 @@
+argv = ['/home/markus/Desktop/wafTestnew/waf', 'configure']
+blddir = '/home/markus/Desktop/wafTestnew/build'
+commands = {'dist': 0, 'configure': True, 'distcheck': 0, 'install': 0, 'build': 0, 'clean': 0, 'distclean': 0, 'check': 0, 'uninstall': 0}
+cwd = '/home/markus/Desktop/wafTestnew'
+environ = {'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LIBGL_DRIVERS_PATH': '/usr/lib/dri:/usr/lib32/dri', 'LOGNAME': 'markus', 'USER': 'markus', 'HOME': '/home/markus', 'PATH': '/home/markus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games', 'DISPLAY': ':0.0', 'SSH_AGENT_PID': '5288', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'XDG_SESSION_COOKIE': '2cb9500a5f6b8759edca035e48d67a4c-1254172350.526518-1113451073', 'SESSION_MANAGER': 'local/ubuntu:/tmp/.ICE-unix/5165', 'SHLVL': '0', '_WAPI_PROCESS_HANDLE_OFFSET': '89', 'LD_LIBRARY_PATH': ':', 'WINDOWPATH': '7', 'ORBIT_SOCKETDIR': '/tmp/orbit-markus', 'GPG_AGENT_INFO': '/tmp/seahorse-rCckuj/S.gpg-agent:5316:1', 'USERNAME': 'markus', 'GDM_XSERVER_LOCATION': 'local', 'SSH_AUTH_SOCK': '/tmp/keyring-8I4a4i/socket.ssh', 'DESKTOP_SESSION': 'default', 'GDMSESSION': 'default', 'cdir': '~/bf-blender-dev/blender/source/', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-yDoleFLPno,guid=31841b68a432dc604c7f722b4ac12710', 'MOZILLA_FIVE_HOME': '', 'XAUTHORITY': '/tmp/.gdmDP580U', 'GNOME_KEYRING_SOCKET': '/tmp/keyring-8I4a4i/socket', 'GTK_MODULES': 'canberra-gtk-module', 'GDM_LANG': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/usr/share/gdm/', 'PWD': '/home/markus', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/markus/.gtkrc-1.2-gnome2', 'LC_TIME': 'en_DK.UTF-8'}
+files = []
+hash = 0
+options = {'compile_targets': None, 'force': False, 'verbose': 0, 'nocache': False, 'progress_bar': 0, 'destdir': '', 'keep': False, 'zones': '', 'blddir': '', 'prefix': '/usr/local/', 'jobs': 4, 'srcdir': '', 'check_c_compiler': 'gcc icc suncc'}
+srcdir = '/home/markus/Desktop/wafTestnew'

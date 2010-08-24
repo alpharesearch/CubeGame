@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>ValaProject</ItemType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED89E782-78F2-478B-B100-CBA9BA44B772}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <ProjectPackage file="/usr/local/share/vala/vapi/glib-2.0.vapi" name="glib-2.0" IsProject="false" />
+        <ProjectPackage file="/usr/local/share/vala/vapi/cairo.vapi" name="cairo" IsProject="false" />
+        <ProjectPackage file="/usr/local/share/vala/vapi/gtk+-2.0.vapi" name="gtk+-2.0" IsProject="false" />
+        <ProjectPackage file="/usr/local/share/vala/vapi/gdk-2.0.vapi" name="gdk-2.0" IsProject="false" />
+      </Packages>
+    </Packages>
+    <compiler>
+      <compiler />
+    </compiler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="false" OptimizationLevel="0" ExtraCompilerArguments="" DefineSymbols="DEBUG MONODEVELOP" EnableMultithreading="false" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="wafTest" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="waf -j4" workingdir="${ProjectDir}" />
+        <Command type="Clean" command="waf clean" workingdir="${ProjectDir}" />
+        <Command type="Execute" command="build/debug/src/cubegame" />
+        <Command type="Custom" name="waf configure" command="waf configure" />
+        <Command type="Custom" name="Debug" command="ddd ./build/debug/src/cubegame -d ./src" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="false" OptimizationLevel="3" ExtraCompilerArguments="" DefineSymbols="MONODEVELOP" EnableMultithreading="false" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="wafTest" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\CubeWidget.vala" />
+    <Compile Include="src\GameMain.vala" />
+    <Compile Include="src\GameArea.vala" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README" />
+    <None Include="wscript" />
+    <None Include="src\wscript_build" />
+  </ItemGroup>
+</Project>
